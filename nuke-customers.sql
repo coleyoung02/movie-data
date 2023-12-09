@@ -1,3 +1,4 @@
+USE moviedb;
 BEGIN;
 TRUNCATE TABLE multi_movie_sale;
 DELETE FROM sales;
