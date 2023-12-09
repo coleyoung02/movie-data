@@ -2,6 +2,8 @@ BEGIN;
 TRUNCATE TABLE sales;
 TRUNCATE TABLE customers;
 TRUNCATE TABLE employees;
+COMMIT;
+BEGIN;
 INSERT IGNORE INTO employees
 VALUES ('classta@email.edu', 'classta', 'TA CS122B');
 INSERT INTO customers VALUES(490001, 'James', 'Brown', '490001', '530 White Ave., Los Angeles, CA 91701', 'jbrown@ics185.edu', 'keyboard');
