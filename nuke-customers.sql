@@ -1,7 +1,8 @@
 BEGIN;
-TRUNCATE TABLE sales;
-TRUNCATE TABLE customers;
-TRUNCATE TABLE employees;
+TRUNCATE TABLE multi_movie_sale;
+DELETE FROM sales;
+DELETE FROM customers;
+DELETE FROM employees;
 COMMIT;
 BEGIN;
 INSERT IGNORE INTO employees
